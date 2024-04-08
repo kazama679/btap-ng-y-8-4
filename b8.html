@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [[1, 2, 'a', 6, 7], ['b', 'hai'], 3];
+        let arr1 = arr[0];
+        let arr2 = arr[1];
+        let viTri = arr[2];
+        let newArr = [];
+        arr1.forEach((a, b) => {
+            if (b === viTri) {
+                arr2.forEach((item) =>{
+                newArr.push(item)});
+            }
+            newArr.push(a);
+        });
+        console.log(newArr);
+    </script>
+</body>
+
+</html>

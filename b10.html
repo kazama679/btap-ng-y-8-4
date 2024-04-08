@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function filterArray(arr1, arr2) {
+            let result = arr1.slice();
+            arr2.forEach(item => {
+                result = result.filter(value => value !== item);
+            });
+            arr1.splice(0, arr1.length, ...result);
+            return result;
+        }
+        let arr1 = [1, 2, '1', 3, 'a'];
+        let arr2 = [1, 2, 3, 4];
+        let filteredValues = filterArray(arr1, arr2);
+        console.log("Kết quả trả về của hàm:", filteredValues);
+        console.log("Mảng arr1 sau khi thay đổi:", arr1);
+    </script>
+</body>
+
+</html>

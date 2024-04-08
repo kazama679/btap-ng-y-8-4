@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let answer = +prompt("nhập số nguyên");
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        let newArr = arr.filter((a)=>{
+            return a <= answer
+        })
+        console.log("mảng sau khi duyệt", newArr);
+        let max = Math.max(...newArr);
+        console.log("Số lớn nhất trong mảng:", max);
+        // em đọc đề vẫn chưa hiểu yêu cầu bài toàn cho lắm
+        // k bt làm vậy có đúng chưa =))
+    </script>
+</body>
+</html>
